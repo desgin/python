@@ -1,0 +1,10 @@
+myFile = open("nums.txt", "r")
+variable_list = myFile.read()
+num_list = variable_list.split("\n")
+nums = list(map(int, num_list))
+print("the lowest number in the list", min(nums))
+print("the maximum number in the list", max(nums))
+print("total count in the list", len(nums))
+print("the average number in the list", sum(nums)/len(nums))
+print(nums)
+
